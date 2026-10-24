@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: cursos-api
+  web:
+    error:
+      whitelabel:
+        enabled: false
+      include-message: always
+      include-binding-errors: always
+      include-stacktrace: never
+      include-exception: true
+  datasource:
+    url: jdbc:h2:file:./data/cursosdb
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:sa}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+  mvc:
+    problemdetails:
+      enabled: true
+
+jwt:
+  secret: ${JWT_SECRET:cursos-api-chave-de-desenvolvimento-com-mais-de-32-caracteres}
+  
+server:
+  servlet:
+    context-path: /api
+
+springdoc:
+  swagger-ui:
+    use-root-path: true
