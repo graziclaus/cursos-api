@@ -137,4 +137,4 @@ Também há logs nos principais serviços e tratamento global de exceções.
 
 ## Área com vídeo
 
-⤿ <!-- ... -->
+⤿ https://youtu.be/5pYGBs_7gL4?is=djNP8RpEdC3iFv91
